@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='flexbox'>
+      <input placeholder='请输入快递单号' bindinput='saveNumber' bindfocus='focus' value='{{expressNumber}}'></input>
+      <button type='primary' bindtap='query'>查询</button>
+    </view>
+      <scroll-view scroll-y='true' style='height:300px;width: 80%' scroll-with-animation='true' class='border'>
+        <view wx:for='{{ expressInfor }}'>
+            <view>{{item.time}}</view>
+            <view>【{{item.context}}】</view>
+         </view> 
+     </scroll-view> 
+</view>

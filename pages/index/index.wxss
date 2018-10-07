@@ -1,0 +1,10 @@
+/**index.wxss**/
+input{
+    border: 1px solid #CCC;
+    padding: 10px;
+    margin-right: 20rpx;
+}
+.flexbox{
+  display: flex;
+  justify-content: space-around;
+}
